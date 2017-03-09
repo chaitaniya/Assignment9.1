@@ -1,0 +1,55 @@
+Q.1.Why MapReduce program is needed in Pig Programming?
+Ans.
+a)Basically,one can use an analogy that as high level languarge are converted to assembly level language similarly pig latin script uses mapreduce.
+Apache Pig is a platform for analyzing large data sets that consists of a high-level language for expressing data analysis programs, 
+coupled with infrastructure for evaluating these programs. The salient property of Pig programs is that their structure is amenable to
+substantial parallelization, which in turns enables them to handle very large data sets.
+
+
+Q.2What are advantages of pig over MapReduce?
+a)Decrease in development time. This is the biggest advantage especially considering vanilla map-reduce jobs' complexity, time-spent
+and maintenance of the programs.
+b)Learning curve is not steep, anyone who does not know how to write vanilla map-reduce or SQL for that matter could pick up 
+and can write map-reduce jobs;not easy to master, though.
+c)Procedural, not declarative unlike SQL, so easier to follow the commands and provides better expressiveness in the transformation of data every step. 
+Comparing to vanilla map-reduce, it is much more like an english language. It is concise and unlike Java but more like Python.
+d)Enjoys everything that Hadoop offers, parallelization, fault-tolerancy with many relational database features.
+e)It is quite effective for unstructured and messy large datasets. Actually, Pig is one of the best tool to make the large unstructured data to structured.
+
+Q.3. What is pig engine and what is its importance?
+a)Apache Pig has a component known as Pig Engine that accepts the Pig Latin scripts as input and converts those scripts into MapReduce jobs.
+b)It is highly beneficial for data analysts as it reduces the overall size of the program.
+
+Q.4.What are the modes of Pig execution?
+Ans)
+a)Local Mode:
+In this mode, all the files are installed and run from your local host and local file system. There is no need of Hadoop or HDFS. 
+This mode is generally used for testing purpose.
+
+b)MapReduce Mode
+MapReduce mode is where we load or process the data that exists in the Hadoop File System (HDFS) using Apache Pig. 
+In this mode, whenever we execute the Pig Latin statements to process the data, a MapReduce job is invoked in the back-end to 
+perform a particular operation on the data that exists in the HDFS.
+
+
+Q.5.What is grunt shell in Pig?
+Ans)
+After invoking the Grunt shell one can run Pig scripts in the shell. In addition to that, there are certain useful shell and utility commands
+provided by the Grunt shell.
+we can invoke any shell commands using sh and fs.
+
+Q.6.What are the features of Pig Latin language?
+Ans)
+a)It is a scripting language.
+b)sing Pig Latin, programmers can perform MapReduce tasks easily without having to type complex codes in Java.
+c)The code size decereases considerably.
+d)80 line mapreduce code can be reduced to 5 lines,reduction is in 1/20 ratio.
+
+Q.7. Is Pig latin commands case sensitive?
+Ans)It is partially case sensitive.For example in dump,describe like commands pig latin is not case sensitive.
+Whereas there are some commands which are case sensitive.
+
+Q.8.What is a data flow language? 
+Ans)
+In a dataflow language, you have a stream of data which is passed from instruction to instruction to be processed.
+Conditional execution, jumps and procedure calls route the data to different instructions. 
